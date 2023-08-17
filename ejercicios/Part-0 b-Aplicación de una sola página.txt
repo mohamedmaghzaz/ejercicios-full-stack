@@ -1,0 +1,36 @@
+title Aplicación de una sola página
+
+browser->server: HTTP-GET https://studies.cs.helsinki.fi/exampleapp/spa
+note right of server: server thinks about it
+server->browser: text/html
+
+browser->server: HTTP-GET https://studies.cs.helsinki.fi/exampleapp/main.css
+note right of server: server thinks about it
+server->browser: text/css
+
+browser->server: HTTP-GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+note right of server: server thinks about it
+server->browser: application/javascript
+
+browser->server: HTTP-GET chrome-extension://lhdoppojpmngadmnindnejefpokejbdd/axe-versions/latest/axe.js
+note right of server: server thinks about it
+server->browser: text/javascript
+
+browser->server: HTTP-GET https://studies.cs.helsinki.fi/exampleapp/data.json
+note right of server: server thinks about it
+server->browser: application/json
+
+browser->server: HTTP-GET chrome-extension://lhdoppojpmngadmnindnejefpokejbdd/highlighter.js
+note right of server: server thinks about it
+server->browser: text/javascript
+
+browser->server: HTTP-GET chrome-extension://gpaiobkfhnonedkhhfjpmhdalgeoebfa/fonts/fabric-icons.css
+note right of server: server thinks about it
+server->browser: text/css
+
+
+
+
+
+
+
